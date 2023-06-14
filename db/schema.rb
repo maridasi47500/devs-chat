@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_13_181650) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_14_095145) do
   create_table "messages", force: :cascade do |t|
     t.text "code"
     t.text "print"
-    t.string "mylang"
+    t.integer "programminglanguage_id"
     t.integer "room_id"
     t.integer "user_id"
     t.datetime "created_at", null: false
@@ -24,6 +24,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_13_181650) do
   create_table "mymessages", force: :cascade do |t|
     t.integer "message_id"
     t.integer "room_id"
+  end
+
+  create_table "programminglanguages", force: :cascade do |t|
+    t.string "name"
+    t.string "printres"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "rooms", force: :cascade do |t|

@@ -3,7 +3,7 @@ class CreateMessages < ActiveRecord::Migration[7.0]
     create_table :messages do |t|
       t.text :code
       t.text :print
-      t.string :mylang
+      t.integer :programminglanguage_id
       t.integer :room_id
       t.integer :user_id
 

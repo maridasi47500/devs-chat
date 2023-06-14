@@ -12,8 +12,8 @@
   <% end %>
 
   <div>
-    <%= form.label :mylang, style: "display: block" %>
-    <%= form.select :mylang,["ruby","python"],{include_blank:true} %>
+    <%= form.label :programminglanguage_id, style: "display: block" %>
+    <%= form.select :programminglanguage_id,Programminglanguage.all.collect{|x|[x.name,x.id]},{include_blank:true} %>
   </div>
   <div>
     <%= form.label :code, style: "display: block" %>
@@ -21,9 +21,8 @@
   </div>
 
   <div>
-    <%= form.hidden_field :user_id %>
+    <%= form.hidden_field :user_id,id: "userid" %>
     <%= form.hidden_field :room_id %>
-    <%= form.hidden_field :mylang %>
   </div>
 
   <div>

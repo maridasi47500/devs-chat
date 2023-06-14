@@ -11,7 +11,17 @@
       <!-- Modal content -->
             <div class="modal-content">
                           <span class="close">&times;</span>
-                                      <div><%= render "messages/form", message: @message %></div>
+                          <p class="menu">
+                          <span>aligner la fenêtre :</span>
+                          <a href="" onclick="alignmodal('top');return false;">top</a>
+                          <a href="" onclick="alignmodal('right');return false;">right</a>
+                          <a href="" onclick="alignmodal('bottom');return false;">bottom</a>
+                          <span>scroll :</span>
+                          <a href="" onclick="scrolltobottom();return false;">scroll bottom</a>
+
+                          </p>
+
+                                      <div class="myform"><%= render "messages/form", message: @message %></div>
                                                         </div>
 
 </div>

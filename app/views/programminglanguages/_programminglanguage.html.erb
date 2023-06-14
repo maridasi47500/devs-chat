@@ -1,0 +1,12 @@
+<div id="<%= dom_id programminglanguage %>">
+  <p>
+    <strong>Name:</strong>
+    <%= programminglanguage.name %>
+  </p>
+
+  <p>
+    <strong>Printres:</strong>
+    <%= simple_format(programminglanguage.printres.gsub("`","&#96;").html_safe).html_safe %>
+  </p>
+
+</div>

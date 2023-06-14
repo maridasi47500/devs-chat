@@ -9,7 +9,7 @@
 		       height: 100%; /* Full height */
 		         overflow: auto; /* Enable scroll if needed */
 			   background-color: rgb(0,0,0); /* Fallback color */
-			     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			     background-color: rgba(255, 137, 137, 0.1); /* Black w/ opacity */
 		     }
 
 		     /* Modal Content/Box */
@@ -35,3 +35,59 @@
 						   text-decoration: none;
 						     cursor: pointer;
 					     } 
+					     #message_code {
+							     	width: 320px;
+
+									height: 80px;
+										width: 100%;
+											height: 500px;
+												font-size: 20px;
+													font-family: sans serif;
+					     }
+					     .modal-content.right {
+						     	right: 0;
+								display: inline-table;
+									position: absolute;
+										height: 90%;
+											top: 0;
+												width: 300px;
+												margin:0 auto;
+											}
+											.modal-content.bottom textarea {
+												height:150px;
+											}
+											.modal-content.bottom {
+													bottom: 0;
+														display: block;
+															position: absolute;
+																margin: 0 auto;
+																	height: 250px;
+																		width: 90%;
+																	}
+																	.modal-content.bottom #message_code {
+																			height: 120px;
+																				display: block;
+																					position: relative;
+																				}
+
+														.modal-content.top {
+																top: 0;
+																	left: 0;
+																		position: absolute;
+																			margin: 0 auto;
+																				height: 250px;
+																					width: 90%;
+																				}
+																	.modal-content.top #message_code {
+																			height: 120px;
+																				display: block;
+																					position: relative;
+																				}
+																				.modal-content .menu * {
+																					float:left;
+																					display:inline;
+																					margin-right:20px;
+																				}
+																				.myform{
+																							clear: both;
+																				}

@@ -23,6 +23,24 @@ window.onload=function(){	// Get the modal
 	           modal.style.display = "none";
 	             }
 	             } 
+	var textareas=document.getElementsByTagName("textarea");
+	for (var i=0;i<textareas.length;i++){
+	textareas[i].addEventListener('keydown', function(e) {
+		  if (e.key == 'Tab') {
+			      e.preventDefault();
+			      var start = this.selectionStart;
+			      var end = this.selectionEnd;
+
+			      // set textarea value to: text before caret + tab + text after caret
+			       this.value = this.value.substring(0, start) +
+			             "\t" + this.value.substring(end);
+			  
+			                 // put caret at right position again
+			                     this.selectionStart =
+			                           this.selectionEnd = start + 1;
+			                             }
+			                             });
+	}
 	             } 
 function submitcode(){
 	var frm=$("#msg-form");
@@ -31,4 +49,20 @@ function submitcode(){
                 console.log(data,"ok data sent") 
 	}});
 	return false;
+}
+function alignmodal(qqpart){
+var quqpart=["top","bottom","right"];
+	var modal=$(".modal-content");
+	for (var i =0;i<quqpart.length;i++){
+         if (quqpart[i] == qqpart){
+		 modal.addClass(qqpart);
+	 }else{
+		 modal.removeClass(quqpart[i]);
+	 }
+	}
+	return false;
+
+}
+function scrolltobottom(){
+	window.scrollTo(0, document.body.scrollHeight);
 }

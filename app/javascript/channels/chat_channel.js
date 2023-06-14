@@ -11,6 +11,9 @@ var chat= consumer.subscriptions.create({ channel: "ChatChannel", room: $("#room
                const html = this.createLine(data)
                    const element = document.querySelector("[data-chat-room='"+$("#roomname").html()+"']")
                        element.insertAdjacentHTML("beforeend", html)
+		   if ($("#userid").val() == data["userid"]){
+		  window.scrollTo(0, document.body.scrollHeight); 
+		   }
                          },
 
                            createLine(data) {
