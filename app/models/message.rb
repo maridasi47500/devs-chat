@@ -7,6 +7,7 @@ class Message < ApplicationRecord
     self.programminglanguage.name
   end
   def mycode
+    self.code=self.code.gsub(" ","\t") #remplace indenthtml par tabulation
     if self.programminglanguage
     threads = []
     p self.code
