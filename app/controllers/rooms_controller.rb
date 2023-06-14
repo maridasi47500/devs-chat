@@ -1,3 +1,4 @@
+require "assets/mylib"
 class RoomsController < ApplicationController
   before_action :set_room, only: %i[ show edit update destroy ]
 
