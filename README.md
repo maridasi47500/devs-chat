@@ -1,25 +1,5 @@
 # README
+# :snake: dev's chat :gem:
+chatter ou rassembler les scripts en ruby, python, et tous les langage de programmation :railway_car:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# devs-chat
